@@ -1,7 +1,8 @@
+# setting plot margins so main doesnt cut off the top
+par(mar = c(5, 5, 4, 2) + 0.1)
 #Question 1
 library(DAAG)
 #a. 
-par(mar = c(5, 5, 4, 2) + 0.1)
 plot(Manitoba.lakes, xlim= c(160,260),cex=0.7)
 #b. 
 text(Manitoba.lakes, labels=rownames(Manitoba.lakes), cex=0.7, pos= 2)
@@ -39,10 +40,10 @@ abline(lm(height~age, data=Loblolly), col="red")
 
 #Question 5
 returns1 = diff(EuStockMarkets)
-hist(returns1)
-hist(returns1, breaks = "scott")
-hist(returns1, breaks = "fd")
-# they both look the same
+hist(returns1, main = "normal")
+hist(returns1, breaks = "fd", main = "fd")
+hist(returns1, breaks = "scott", main = "scott")
+# they both look the same for fd and scott
 
 #Question 6
 
@@ -52,7 +53,9 @@ y <- c(15, 10, 10, 7, 2, 5, 2, 7, 10, 10, 15)
 pointNames = c("A","B","C","D","E","F","G","H","I","J")
 
 # c.
+# setting the margins for my plots
 par(mar = c(4, 4, 4, 4), pin = c(4, 4),bg="blue")
+
 mystar = plot(x,y, asp = 1, cex = 0.7, xlim =c(2,15), ylim = c(2,15))
 text(x,y,labels = pointNames,pos=2,cex = 0.7)
 lines(x,y, col = "red",lwd = 3)

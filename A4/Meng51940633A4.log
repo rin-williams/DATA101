@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.13)  28 MAR 2023 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.13)  29 MAR 2023 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Meng51940633A3.tex
-(./Meng51940633A3.tex
+**Meng51940633A4.tex
+(./Meng51940633A4.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-07> (/Users/rin/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -209,8 +209,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count273
 \l__pdf_internal_box=\box51
-) (./Meng51940633A3.aux)
-\openout1 = `Meng51940633A3.aux'.
+) (./Meng51940633A4.aux)
+\openout1 = `Meng51940633A4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
@@ -276,9 +276,32 @@ Package geometry Warning: The marginal notes overrun the paper.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 76.
-(./Meng51940633A3.out) (./Meng51940633A3.out)
+(./Meng51940633A4.out) (./Meng51940633A4.out)
 \@outlinefile=\write3
-\openout3 = `Meng51940633A3.out'.
+\openout3 = `Meng51940633A4.out'.
+
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 85.
+(/Users/rin/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1pplx.fd
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 85.
+(/Users/rin/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 85.
+(/Users/rin/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 85.
+(/Users/rin/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 85.
+(/Users/rin/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+
+LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 89.
 (/Users/rin/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -286,74 +309,80 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 91.
-<figure/Meng51940633A3-Rnwauto-report-1.pdf, id=4, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-1.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-1.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-1.pdf  used on input line 103.
+<figure/Meng51940633A4-Rnwauto-report-1.pdf, id=4, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-1.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-1.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-1.pdf  used on input line 104.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
-<figure/Meng51940633A3-Rnwauto-report-2.pdf, id=5, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-2.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-2.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-2.pdf  used on input line 117.
+<figure/Meng51940633A4-Rnwauto-report-2.pdf, id=5, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-2.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-2.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-2.pdf  used on input line 118.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
 [1
 
-{/Users/rin/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figure/Meng51940633A3-Rnwauto-report-1.pdf>]
-<figure/Meng51940633A3-Rnwauto-report-3.pdf, id=20, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-3.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-3.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-3.pdf  used on input line 131.
+{/Users/rin/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figure/Meng51940633A4-Rnwauto-report-1.pdf>]
+<figure/Meng51940633A4-Rnwauto-report-3.pdf, id=20, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-3.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-3.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-3.pdf  used on input line 132.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
-[2 <./figure/Meng51940633A3-Rnwauto-report-2.pdf> <./figure/Meng51940633A3-Rnwauto-report-3.pdf>]
-<figure/Meng51940633A3-Rnwauto-report-4.pdf, id=35, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-4.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-4.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-4.pdf  used on input line 162.
+[2 <./figure/Meng51940633A4-Rnwauto-report-2.pdf> <./figure/Meng51940633A4-Rnwauto-report-3.pdf>]
+<figure/Meng51940633A4-Rnwauto-report-4.pdf, id=35, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-4.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-4.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-4.pdf  used on input line 163.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
 
-Overfull \hbox (2.2035pt too wide) in paragraph at lines 170--170
+Overfull \hbox (2.2035pt too wide) in paragraph at lines 171--171
 [][]\T1/lmtt/m/it/10 # the higher the tree but loblolly reaches its maximum height in around 150 years, so this[][] 
  []
 
-<figure/Meng51940633A3-Rnwauto-report-5.pdf, id=36, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-5.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-5.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-5.pdf  used on input line 179.
+<figure/Meng51940633A4-Rnwauto-report-5.pdf, id=36, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-5.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-5.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-5.pdf  used on input line 180.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
-[3 <./figure/Meng51940633A3-Rnwauto-report-4.pdf>]
-<figure/Meng51940633A3-Rnwauto-report-6.pdf, id=47, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-6.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-6.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-6.pdf  used on input line 190.
+[3 <./figure/Meng51940633A4-Rnwauto-report-4.pdf>]
+<figure/Meng51940633A4-Rnwauto-report-6.pdf, id=47, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-6.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-6.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-6.pdf  used on input line 190.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
-[4 <./figure/Meng51940633A3-Rnwauto-report-5.pdf> <./figure/Meng51940633A3-Rnwauto-report-6.pdf>]
-<figure/Meng51940633A3-Rnwauto-report-7.pdf, id=64, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-7.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-7.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-7.pdf  used on input line 213.
+<figure/Meng51940633A4-Rnwauto-report-7.pdf, id=48, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-7.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-7.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-7.pdf  used on input line 200.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
-<figure/Meng51940633A3-Rnwauto-report-8.pdf, id=65, 433.62pt x 433.62pt>
-File: figure/Meng51940633A3-Rnwauto-report-8.pdf Graphic file (type pdf)
-<use figure/Meng51940633A3-Rnwauto-report-8.pdf>
-Package pdftex.def Info: figure/Meng51940633A3-Rnwauto-report-8.pdf  used on input line 226.
+[4 <./figure/Meng51940633A4-Rnwauto-report-5.pdf> <./figure/Meng51940633A4-Rnwauto-report-6.pdf>]
+<figure/Meng51940633A4-Rnwauto-report-8.pdf, id=65, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-8.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-8.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-8.pdf  used on input line 225.
 (pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
-[5 <./figure/Meng51940633A3-Rnwauto-report-7.pdf>] [6 <./figure/Meng51940633A3-Rnwauto-report-8.pdf>] (./Meng51940633A3.aux)
-Package rerunfilecheck Info: File `Meng51940633A3.out' has not changed.
+[5 <./figure/Meng51940633A4-Rnwauto-report-7.pdf>]
+<figure/Meng51940633A4-Rnwauto-report-9.pdf, id=76, 433.62pt x 433.62pt>
+File: figure/Meng51940633A4-Rnwauto-report-9.pdf Graphic file (type pdf)
+<use figure/Meng51940633A4-Rnwauto-report-9.pdf>
+Package pdftex.def Info: figure/Meng51940633A4-Rnwauto-report-9.pdf  used on input line 238.
+(pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
+[6 <./figure/Meng51940633A4-Rnwauto-report-8.pdf> <./figure/Meng51940633A4-Rnwauto-report-9.pdf>] [7] (./Meng51940633A4.aux)
+Package rerunfilecheck Info: File `Meng51940633A4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9323 strings out of 477989
- 149290 string characters out of 5838873
- 1857346 words of memory out of 5000000
- 29399 multiletter control sequences out of 15000+600000
- 515873 words of font info for 38 fonts, out of 8000000 for 9000
+ 9423 strings out of 477989
+ 151360 string characters out of 5838873
+ 1858346 words of memory out of 5000000
+ 29475 multiletter control sequences out of 15000+600000
+ 526247 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,6n,76p,384b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,384b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/rin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/rin/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}</Users/rin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></Users/rin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/rin/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></Users/rin/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Meng51940633A3.pdf (6 pages, 139376 bytes).
+Output written on Meng51940633A4.pdf (7 pages, 145083 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

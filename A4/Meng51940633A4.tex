@@ -77,20 +77,21 @@
 
 
 
+\title{\title{}}
 
 
 
-
-
+\maketitle
 The results below are generated from an R script.
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
+\hlcom{# setting plot margins so main doesnt cut off the top}
+\hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{5}\hlstd{,} \hlnum{5}\hlstd{,} \hlnum{4}\hlstd{,} \hlnum{2}\hlstd{)} \hlopt{+} \hlnum{0.1}\hlstd{)}
 \hlcom{#Question 1}
 \hlkwd{library}\hlstd{(DAAG)}
 \hlcom{#a. }
-\hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{5}\hlstd{,} \hlnum{5}\hlstd{,} \hlnum{4}\hlstd{,} \hlnum{2}\hlstd{)} \hlopt{+} \hlnum{0.1}\hlstd{)}
 \hlkwd{plot}\hlstd{(Manitoba.lakes,} \hlkwc{xlim}\hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{160}\hlstd{,}\hlnum{260}\hlstd{),}\hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
 \hlcom{#b. }
 \hlkwd{text}\hlstd{(Manitoba.lakes,} \hlkwc{labels}\hlstd{=}\hlkwd{rownames}\hlstd{(Manitoba.lakes),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{,} \hlkwc{pos}\hlstd{=} \hlnum{2}\hlstd{)}
@@ -100,7 +101,7 @@ The results below are generated from an R script.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-1} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-1} 
 
 }
 
@@ -114,7 +115,7 @@ The results below are generated from an R script.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-2} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-2} 
 
 }
 
@@ -128,7 +129,7 @@ The results below are generated from an R script.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-3} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-3} 
 
 }
 
@@ -159,7 +160,7 @@ The results below are generated from an R script.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-4} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-4} 
 
 }
 
@@ -172,28 +173,37 @@ The results below are generated from an R script.
 
 \hlcom{#Question 5}
 \hlstd{returns1} \hlkwb{=} \hlkwd{diff}\hlstd{(EuStockMarkets)}
-\hlkwd{hist}\hlstd{(returns1)}
+\hlkwd{hist}\hlstd{(returns1,} \hlkwc{main} \hlstd{=} \hlstr{"normal"}\hlstd{)}
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-5} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-5} 
 
 }
 
 
 \begin{kframe}\begin{alltt}
-\hlkwd{hist}\hlstd{(returns1,} \hlkwc{breaks} \hlstd{=} \hlstr{"scott"}\hlstd{)}
-\hlkwd{hist}\hlstd{(returns1,} \hlkwc{breaks} \hlstd{=} \hlstr{"fd"}\hlstd{)}
+\hlkwd{hist}\hlstd{(returns1,} \hlkwc{breaks} \hlstd{=} \hlstr{"fd"}\hlstd{,} \hlkwc{main} \hlstd{=} \hlstr{"fd"}\hlstd{)}
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-6} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-6} 
 
 }
 
 
 \begin{kframe}\begin{alltt}
-\hlcom{# they both look the same}
+\hlkwd{hist}\hlstd{(returns1,} \hlkwc{breaks} \hlstd{=} \hlstr{"scott"}\hlstd{,} \hlkwc{main} \hlstd{=} \hlstr{"scott"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-7} 
+
+}
+
+
+\begin{kframe}\begin{alltt}
+\hlcom{# they both look the same for fd and scott}
 
 \hlcom{#Question 6}
 
@@ -203,14 +213,16 @@ The results below are generated from an R script.
 \hlstd{pointNames} \hlkwb{=} \hlkwd{c}\hlstd{(}\hlstr{"A"}\hlstd{,}\hlstr{"B"}\hlstd{,}\hlstr{"C"}\hlstd{,}\hlstr{"D"}\hlstd{,}\hlstr{"E"}\hlstd{,}\hlstr{"F"}\hlstd{,}\hlstr{"G"}\hlstd{,}\hlstr{"H"}\hlstd{,}\hlstr{"I"}\hlstd{,}\hlstr{"J"}\hlstd{)}
 
 \hlcom{# c.}
+\hlcom{# setting the margins for my plots}
 \hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{4}\hlstd{,} \hlnum{4}\hlstd{,} \hlnum{4}\hlstd{,} \hlnum{4}\hlstd{),} \hlkwc{pin} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{4}\hlstd{,} \hlnum{4}\hlstd{),}\hlkwc{bg}\hlstd{=}\hlstr{"blue"}\hlstd{)}
+
 \hlstd{mystar} \hlkwb{=} \hlkwd{plot}\hlstd{(x,y,} \hlkwc{asp} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{0.7}\hlstd{,} \hlkwc{xlim} \hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,}\hlnum{15}\hlstd{),} \hlkwc{ylim} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,}\hlnum{15}\hlstd{))}
 \hlkwd{text}\hlstd{(x,y,}\hlkwc{labels} \hlstd{= pointNames,}\hlkwc{pos}\hlstd{=}\hlnum{2}\hlstd{,}\hlkwc{cex} \hlstd{=} \hlnum{0.7}\hlstd{)}
 \hlkwd{lines}\hlstd{(x,y,} \hlkwc{col} \hlstd{=} \hlstr{"red"}\hlstd{,}\hlkwc{lwd} \hlstd{=} \hlnum{3}\hlstd{)}
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-7} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-8} 
 
 }
 
@@ -223,7 +235,7 @@ The results below are generated from an R script.
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A3-Rnwauto-report-8} 
+{\centering \includegraphics[width=.6\linewidth]{figure/Meng51940633A4-Rnwauto-report-9} 
 
 }
 
@@ -259,14 +271,14 @@ packages used):
 ##  [1] Rcpp_1.0.10         lattice_0.20-45     deldir_1.0-6        png_0.1-8          
 ##  [5] rbibutils_2.2.13    grid_4.2.2          evaluate_0.20       highr_0.10         
 ##  [9] Rdpack_2.4          latticeExtra_0.6-30 RColorBrewer_1.1-3  tools_4.2.2        
-## [13] interp_1.1-3        jpeg_0.1-10         xfun_0.37           compiler_4.2.2     
-## [17] knitr_1.42
+## [13] interp_1.1-3        tinytex_0.44        jpeg_0.1-10         xfun_0.37          
+## [17] compiler_4.2.2      knitr_1.42
 \end{verbatim}
 \begin{alltt}
 \hlkwd{Sys.time}\hlstd{()}
 \end{alltt}
 \begin{verbatim}
-## [1] "2023-03-28 10:49:42 PDT"
+## [1] "2023-03-29 16:22:44 PDT"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
