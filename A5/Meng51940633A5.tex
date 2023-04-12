@@ -1,0 +1,254 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{xcolor}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage[sc]{mathpazo}
+\renewcommand{\sfdefault}{lmss}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfstartview={XYZ null null 1}}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+\makeatother
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+
+
+\title{}
+
+
+
+\maketitle
+The results below are generated from an R script.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# Question 1}
+\hlcom{#a. }
+\hlstd{secant} \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{x1}\hlstd{,}\hlkwc{x2}\hlstd{,}\hlkwc{f}\hlstd{)\{}
+  \hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{3}\hlstd{)\{}
+    \hlstd{x3} \hlkwb{=} \hlstd{x2}\hlopt{-}\hlstd{(}\hlkwd{f}\hlstd{(x2)}\hlopt{*}\hlstd{(x2}\hlopt{-}\hlstd{x1)}\hlopt{/}\hlstd{(}\hlkwd{f}\hlstd{(x2)}\hlopt{-}\hlkwd{f}\hlstd{(x1)))}
+    \hlstd{x2} \hlkwb{=} \hlstd{x1}
+    \hlstd{x1} \hlkwb{=} \hlstd{x3}
+  \hlstd{\}}
+  \hlkwd{return}\hlstd{(x3)}
+\hlstd{\}}
+
+\hlcom{#b. }
+\hlstd{f} \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{x}\hlstd{)\{}
+    \hlkwd{cos}\hlstd{(x)}
+\hlstd{\}}
+\hlkwd{secant}\hlstd{(}\hlnum{1.56}\hlstd{,} \hlnum{1.58}\hlstd{, f)}
+\end{alltt}
+\begin{verbatim}
+## [1] 1.570796
+\end{verbatim}
+\begin{alltt}
+\hlcom{#c)}
+\hlstd{f} \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{x}\hlstd{)\{}
+  \hlstd{((x}\hlopt{^}\hlnum{3}\hlstd{)}\hlopt{-}\hlstd{(}\hlnum{2}\hlopt{*}\hlstd{x)}\hlopt{+}\hlnum{3}\hlstd{)}
+\hlstd{\}}
+\hlkwd{secant}\hlstd{(}\hlopt{-}\hlnum{2}\hlstd{,}\hlopt{-}\hlnum{1.8}\hlstd{, f)}
+\end{alltt}
+\begin{verbatim}
+## [1] -1.893291
+\end{verbatim}
+\begin{alltt}
+\hlcom{# Question 2}
+\hlcom{#a. }
+\hlstd{WHunif} \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{n}\hlstd{,}\hlkwc{x}\hlstd{,}\hlkwc{y}\hlstd{,}\hlkwc{z}\hlstd{)\{}
+  \hlstd{u} \hlkwb{=} \hlkwd{numeric}\hlstd{(n)}
+  \hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{n)\{}
+    \hlstd{x} \hlkwb{=}  \hlstd{(}\hlnum{171}\hlopt{*}\hlstd{(x}\hlopt{-}\hlnum{1}\hlstd{))} \hlopt{%%} \hlnum{30269}
+    \hlstd{y} \hlkwb{=} \hlstd{(}\hlnum{172}\hlopt{*}\hlstd{(x}\hlopt{-}\hlnum{1}\hlstd{))} \hlopt{%%} \hlnum{30307}
+    \hlstd{z} \hlkwb{=} \hlstd{(}\hlnum{170}\hlopt{*}\hlstd{(x}\hlopt{-}\hlnum{1}\hlstd{))} \hlopt{%%} \hlnum{30323}
+    \hlstd{v} \hlkwb{=} \hlstd{(x}\hlopt{/}\hlnum{30269}\hlstd{)} \hlopt{+} \hlstd{(y}\hlopt{/}\hlnum{30307}\hlstd{)} \hlopt{+} \hlstd{(z}\hlopt{/}\hlnum{30323}\hlstd{)}
+    \hlstd{u[i]} \hlkwb{=} \hlstd{v} \hlopt{-} \hlkwd{floor}\hlstd{(v)}
+  \hlstd{\}}
+  \hlkwd{return}\hlstd{(u)}
+\hlstd{\}}
+
+\hlcom{#b. }
+\hlkwd{WHunif}\hlstd{(}\hlnum{20}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{3}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+##  [1] 0.98871844 0.53552175 0.68532986 0.24807533 0.01678553 0.24223291 0.87052850
+##  [8] 0.68666066 0.01487628 0.96851896 0.07183138 0.98947080 0.27700946 0.27169936
+## [15] 0.21008242 0.03520354 0.20771066 0.04082593 0.73392055 0.87232181
+\end{verbatim}
+\begin{alltt}
+\hlcom{# Question 3 }
+\hlcom{#a. }
+\hlstd{WHcointoss} \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{n}\hlstd{,} \hlkwc{p}\hlstd{)\{}
+  \hlstd{tosses} \hlkwb{=} \hlkwd{WHunif}\hlstd{(n,} \hlnum{1}\hlstd{,} \hlnum{2}\hlstd{,} \hlnum{3}\hlstd{)}
+  \hlstd{results} \hlkwb{=} \hlkwd{numeric}\hlstd{(n)}
+  \hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(tosses))\{}
+    \hlkwa{if}\hlstd{(tosses[i]} \hlopt{>} \hlstd{p)\{}
+      \hlstd{results[i]} \hlkwb{<-} \hlnum{1}
+    \hlstd{\}}\hlkwa{else}\hlstd{\{}
+      \hlstd{results[i]} \hlkwb{<-} \hlnum{0}
+    \hlstd{\}}
+  \hlstd{\}}
+  \hlkwd{return}\hlstd{(results)}
+\hlstd{\}}
+\hlcom{#b.}
+\hlkwd{WHcointoss}\hlstd{(}\hlnum{20}\hlstd{,} \hlnum{0.5}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+##  [1] 1 1 1 0 0 0 1 1 0 1 0 1 0 0 0 0 0 0 1 1
+\end{verbatim}
+\begin{alltt}
+\hlcom{# Question 4}
+\hlstd{func} \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{x}\hlstd{)\{}
+  \hlkwd{return}\hlstd{(}\hlkwd{log}\hlstd{(x)}\hlopt{+}\hlstd{x)}
+\hlstd{\}}
+\hlkwd{secant}\hlstd{(}\hlnum{0.5}\hlstd{,}\hlnum{1}\hlstd{,func)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.5671391
+\end{verbatim}
+\begin{alltt}
+\hlcom{# Question 5}
+\hlcom{#a.}
+\hlstd{myrandom}  \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{n}\hlstd{,}\hlkwc{x}\hlstd{)\{}
+  \hlkwd{set.seed}\hlstd{(x)}
+  \hlstd{toReturn} \hlkwb{=} \hlkwd{numeric}\hlstd{(n)}
+  \hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{n)\{}
+    \hlstd{x} \hlkwb{=} \hlstd{(}\hlnum{171}\hlopt{*}\hlstd{(x}\hlopt{-}\hlnum{1}\hlstd{))} \hlopt{%%} \hlnum{30269}
+    \hlstd{toReturn[i]} \hlkwb{=} \hlstd{x}\hlopt{/}\hlnum{30269}
+  \hlstd{\}}
+  \hlkwd{return}\hlstd{(toReturn)}
+\hlstd{\}}
+\hlcom{#b. }
+\hlkwd{myrandom}\hlstd{(}\hlnum{10}\hlstd{,}\hlnum{25}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+##  [1] 0.1355843 0.1792593 0.6476924 0.7497440 0.2005682 0.2915194 0.8441640 0.3463940
+##  [9] 0.2277247 0.9352803
+\end{verbatim}
+\begin{alltt}
+\hlcom{# Question 6}
+\hlcom{#a.}
+\hlstd{myguesses} \hlkwb{=} \hlkwa{function}\hlstd{(}\hlkwc{n}\hlstd{)\{}
+  \hlstd{x} \hlkwb{=} \hlkwd{myrandom}\hlstd{(n,}\hlnum{325}\hlstd{)}
+  \hlstd{toReturn} \hlkwb{=} \hlkwd{as.integer}\hlstd{(x} \hlopt{<=} \hlnum{0.25}\hlstd{)}
+  \hlkwd{return}\hlstd{(toReturn)}
+
+\hlstd{\}}
+\hlcom{#b. }
+\hlkwd{myguesses}\hlstd{(}\hlnum{20}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+##  [1] 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0
+\end{verbatim}
+\begin{alltt}
+\hlkwd{cat}\hlstd{(}\hlkwd{sum}\hlstd{(}\hlkwd{myguesses}\hlstd{(}\hlnum{20}\hlstd{)),} \hlstr{"  out of 20 answers were correct"}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## 3   out of 20 answers were correct
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+The R session information (including the OS info, R version and all
+packages used):
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{sessionInfo}\hlstd{()}
+\end{alltt}
+\begin{verbatim}
+## R version 4.2.2 (2022-10-31)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Ventura 13.1
+## 
+## Matrix products: default
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## loaded via a namespace (and not attached):
+##  [1] compiler_4.2.2  fastmap_1.1.0   cli_3.6.0       htmltools_0.5.4 tools_4.2.2    
+##  [6] tinytex_0.44    rmarkdown_2.20  highr_0.10      knitr_1.42      xfun_0.37      
+## [11] digest_0.6.31   rlang_1.0.6     evaluate_0.20
+\end{verbatim}
+\begin{alltt}
+\hlkwd{Sys.time}\hlstd{()}
+\end{alltt}
+\begin{verbatim}
+## [1] "2023-04-12 12:24:40 PDT"
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+
+\end{document}
